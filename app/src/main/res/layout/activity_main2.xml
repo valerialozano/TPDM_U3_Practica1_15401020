@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar pago"
+        android:textSize="25dp"
+        android:textColor="#009688"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:textSize="20dp"
+        android:id="@+id/descripcion2"/>
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monto"
+        android:textSize="20dp"
+        android:inputType="numberDecimal"
+        android:id="@+id/monto2" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de vencimiento"
+        android:textSize="20dp"
+        android:inputType="date"
+        android:id="@+id/fecha2" />
+    <CheckBox
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pagado"
+        android:checked="false"
+        android:textSize="20dp"
+        android:id="@+id/pagado2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            android:textSize="20dp"
+            android:id="@+id/actualizar"/>
+        <Button
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:textSize="20dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/eliminar"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/regresar"/>
+</LinearLayout>
